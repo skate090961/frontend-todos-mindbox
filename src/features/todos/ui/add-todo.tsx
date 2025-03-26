@@ -21,7 +21,7 @@ export const AddTodo = memo(() => {
                     type="text"
                     value={text}
                     onChange={(e) => setText(e.target.value)}
-                    placeholder="Add a new task..."
+                    placeholder="What needs to be done?"
                     style={{ width: '100%' }}
                 />
                 <Button type="submit">Add</Button>
