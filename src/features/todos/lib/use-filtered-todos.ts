@@ -1,7 +1,13 @@
 import { useMemo } from 'react';
 import { useTodos } from './use-todos';
+import { Todo } from '../model/types';
 
-export function useFilteredTodos() {
+/**
+ * Hook to get todos filtered according to current filter
+ * @returns Todo[]
+ */
+
+export const useFilteredTodos = (): Todo[] => {
     const { todos, filter } = useTodos();
 
     return useMemo(() => {
@@ -14,4 +20,4 @@ export function useFilteredTodos() {
                 return todos;
         }
     }, [todos, filter]);
-}
+};
