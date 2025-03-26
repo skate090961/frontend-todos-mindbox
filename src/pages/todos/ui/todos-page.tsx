@@ -5,7 +5,7 @@ import { Layout } from './layout';
 export function TodosPage() {
     return (
         <Layout>
-            <Badge>test task for Mindbox</Badge>
+            <Badge>Mindbox Test Task</Badge>
             <Heading size="9" mt="2">
                 TODOS
             </Heading>
