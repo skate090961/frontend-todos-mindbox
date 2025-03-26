@@ -1,0 +1,14 @@
+.root {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    min-height: var(--footer-height);
+    border-top: 1px solid var(--accent-10);
+    padding: var(--space-3) var(--space-6);
+    background-color: var(--color-panel);
+}
+
+.text {
+    color: var(--accent-a11);
+}

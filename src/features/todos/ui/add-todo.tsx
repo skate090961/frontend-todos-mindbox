@@ -1,6 +1,6 @@
 import { FormEvent, memo, useState } from 'react';
-import { useTodos } from '../model/todo-context';
-import { Button, TextField } from '@radix-ui/themes';
+import { Button, Flex, TextField } from '@radix-ui/themes';
+import { useTodos } from '../lib/use-todos';
 
 export const AddTodo = memo(() => {
     const [text, setText] = useState('');
@@ -16,13 +16,16 @@ export const AddTodo = memo(() => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <TextField.Root
-                type="text"
-                value={text}
-                onChange={(e) => setText(e.target.value)}
-                placeholder="Add a new task..."
-            />
-            <Button type="submit">Add</Button>
+            <Flex gap="3">
+                <TextField.Root
+                    type="text"
+                    value={text}
+                    onChange={(e) => setText(e.target.value)}
+                    placeholder="Add a new task..."
+                    style={{ width: '100%' }}
+                />
+                <Button type="submit">Add</Button>
+            </Flex>
         </form>
     );
 });

@@ -1,5 +1,5 @@
-import { useTodos } from '../model/todo-context';
 import { useMemo } from 'react';
+import { useTodos } from './use-todos';
 
 export function useFilteredTodos() {
     const { todos, filter } = useTodos();

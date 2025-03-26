@@ -1,12 +1,9 @@
 import { TodosPage } from '@/pages/todos';
-import { Container } from '@radix-ui/themes';
+import { BaseLayout } from './layout/base-layout';
+import { Footer } from '@/widgets/footer';
 
 const App = () => {
-    return (
-        <Container>
-            <TodosPage />
-        </Container>
-    );
+    return <BaseLayout main={<TodosPage />} footer={<Footer />} />;
 };
 
 export default App;

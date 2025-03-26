@@ -1,14 +1,14 @@
-import { useTodos } from '../model/todo-context';
 import { Box, Button, Flex, SegmentedControl, Text } from '@radix-ui/themes';
 import { memo } from 'react';
+import { useTodos } from '../lib/use-todos';
 
 export const TodoFilter = memo(() => {
     const { setFilter, clearCompleted, activeCount } = useTodos();
 
     return (
         <Box>
-            <Flex justify={'between'} align={'center'}>
-                <Text as={'p'}>{activeCount} items left</Text>
+            <Flex justify="between" align="center" gap="4" wrap="wrap">
+                <Text as="p">{activeCount} items left</Text>
                 <Box>
                     <SegmentedControl.Root defaultValue="all">
                         <SegmentedControl.Item
@@ -31,7 +31,7 @@ export const TodoFilter = memo(() => {
                         </SegmentedControl.Item>
                     </SegmentedControl.Root>
                 </Box>
-                <Button variant={'outline'} onClick={clearCompleted}>
+                <Button variant="outline" onClick={clearCompleted}>
                     Clear completed
                 </Button>
             </Flex>
