@@ -1,5 +1,12 @@
+import { TodosPage } from '@/pages/todos';
+import { Container } from '@radix-ui/themes';
+
 const App = () => {
-    return <div>Hello!</div>;
+    return (
+        <Container>
+            <TodosPage />
+        </Container>
+    );
 };
 
 export default App;
