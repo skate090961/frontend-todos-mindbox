@@ -15,11 +15,7 @@
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
         "isolatedModules": true,
-        "lib": [
-            "ES2021",
-            "DOM",
-            "DOM.Iterable"
-        ],
+        "lib": ["ES2021", "DOM", "DOM.Iterable"],
         "skipLibCheck": true,
         "types": ["vite/client"]
     },

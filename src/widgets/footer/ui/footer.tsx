@@ -13,9 +13,7 @@ export const Footer = () => {
                 </Text>
                 <Flex direction="column" align="center">
                     <Text size="2">Telegram: @zzzywo</Text>
-                    <Link
-                        href="https://hh.ru/resume/35840d29ff096b81760039ed1f473356596b59?from=share_ios"
-                    >
+                    <Link href="https://hh.ru/resume/35840d29ff096b81760039ed1f473356596b59?from=share_ios">
                         Мое резюме на HH.ru
                     </Link>
                 </Flex>
